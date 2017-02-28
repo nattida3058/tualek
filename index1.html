@@ -1,0 +1,238 @@
+<! DOCTYPE html>
+<html>
+<title> W3.CSS แม่แบบ </ title>
+<meta charset = "UTF-8">
+<ชื่อ meta = "วิวพอร์ตเนื้อหา" = "width = อุปกรณ์ความกว้างมาตราส่วนเริ่มต้น = 1">
+<link rel = "สไตล์ชีต" href = "w3.css">
+<link rel = "สไตล์ชีต" href = "https://fonts.googleapis.com/css?family=Raleway">
+<style>
+ร่างกาย H1, H2, H3, H4, H5 {font-family: "Raleway" Sans-serif}
+.w3 สาม img {margin ล่าง: -6px; ความทึบ: 0.8; เคอร์เซอร์: ตัวชี้}
+.w3 สาม img: โฉบ {ทึบ: 1}
+</ style>
+<ระดับร่างกาย = "W3-แสงสีเทา W3 เนื้อหา" style = "ความกว้างสูงสุด: 1600 พิกเซล">
+
+<! - Sidenav / เมนู ->
+<nav class = "W3-sidenav W3 ขาว W3-เคลื่อนไหวซ้าย W3 ศูนย์ W3 ข้อความสีเทา W3 ยุบ W3 บน" style = "ดัชนี z: 3; width: 300px; font-weight: กล้า" id = "mySidenav"> ฟรี
+  <h3 class = "W3-padding-64"> <b> บาง <br> NAME </ b> </ h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding w3-hide-large"> CLOSE </a>
+  <a href="#" onclick="w3_close()" class="w3-padding"> PORTFOLIO </a> 
+  <a href="#about" onclick="w3_close()" class="w3-padding"> เกี่ยวกับ ME </a> 
+  <a href="#contact" onclick="w3_close()" class="w3-padding"> ติดต่อ </a>
+</ NAV>
+
+<! - เมนูด้านบนในหน้าจอขนาดเล็ก ->
+<ระดับหัว = "W3-Container W3 บน W3-hide-W3 ขนาดใหญ่สีขาว W3-W3 XLarge-padding-16">
+  <span class = "W3 ซ้าย W3-padding"> ชื่อบาง </ span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()"> ☰ </a>
+</ หัว>
+
+<! - ผลการซ้อนทับเมื่อเปิด sidenav บนหน้าจอขนาดเล็ก ->
+<div class = "W3 ซ้อนทับ W3 ซ่อนขนาดใหญ่ W3-เคลื่อนไหว-ทึบ" onclick = "w3_close ()" style = "เคอร์เซอร์: ชี้" title = "เมนูด้านข้างใกล้" id = "myOverlay"> </ div>
+
+<! - Page Content! ->
+<div class = "W3 หลัก" style = "ขอบซ้าย: 300px">
+
+  <! - กดเนื้อหาบนหน้าจอขนาดเล็ก -> 
+  <div class = "W3-hide-ใหญ่" style = "ขอบด้านบน: 83px"> </ div>
+  
+  <! - ตารางถ่ายภาพ ->
+  <div class = "W3 แถว">
+    <div class = "W3 สาม">
+      <img src = "natureboy.jpg" style = "width: 100%" onclick = "onClick (นี้)" alt = "เด็กผู้ชายรายล้อมไปด้วยธรรมชาติที่สวยงาม">
+      <img src = "girl_mountain.jpg" style = "width: 100%" onclick = "onClick (นี้)" alt = "สิ่งที่มีทัศนียภาพที่สวยงามยามพระอาทิตย์ตกดินนี้">
+      <img src = "girl.jpg" style = "width: 100%" onclick = "onClick (นี้)" alt = "... เดอะบีชมายุ่งกับฉันสวย">
+    </ div>
+
+    <div class = "W3 สาม">
+      <img src = "boy.jpg" style = "width: 100%" onclick = "onClick (นี้)" alt = ". วันที่เงียบสงบที่ชายหาดเย็น แต่สวย">
+      <img src = "man_bench.jpg" style = "width: 100%" onclick = "onClick (นี้)" alt = "รอรถบัสที่อยู่ในทะเลทราย">
+      <img src = "natureboy.jpg" style = "width: 100%" onclick = "onClick (นี้)" alt = "ธรรมชาติอีกครั้ง .. ที่ดีที่สุด">
+    </ div>
+    
+    <div class = "W3 สาม">
+      <img src = "girl.jpg" style = "width: 100%" onclick = "onClick (นี้)" alt = "พายเรือแคนูอีกครั้ง">
+      <img src = "girl_train.jpg" style = "width: 100%" onclick = "onClick (นี้)" alt = "สาวและผ่านรถไฟ">
+      <img src = "closegirl.jpg" style = "width: 100%" onclick = "onClick (นี้)" alt = "สิ่งที่เป็นวันที่สวยงาม!">
+    </ div>
+  </ div>
+
+  <! - เลข ->
+  <div class = "W3 ศูนย์ W3-padding-32">
+    <div class = "W3 บาร์">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black"> « </a>
+      <a href="#" class="w3-bar-item w3-black w3-button"> 1 </a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black"> 2 </a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black"> 3 </a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black"> 4 </a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black"> » </a>
+    </ div>
+  </ div>
+  
+  <! - Modal สำหรับภาพขนาดเต็มเมื่อคลิก ->
+  <div id = "modal01" class = "W3 กิริยา W3 ดำ W3-padding-0" onclick = "this.style.display = 'ไม่มี'">
+    <ระดับช่วง = "W3-W3 closebtn ข้อความสีขาวทึบ W3-W3-hover-ทึบปิด W3-W3 xxlarge-Container-W3 การแสดงผลรายนามสมาชิก"> × </ span>
+    <div class = "W3 กิริยาเนื้อหา W3-เคลื่อนไหวซูม W3-W3 ศูนย์โปร่งใส W3-padding-64">
+      <img id = "img01" class = "W3 ภาพ">
+      <p id = "คำบรรยายภาพ"> </ p>
+    </ div>
+  </ div>
+
+  <! - ส่วนเกี่ยวกับ ->
+  <div class = "W3-Container-W3 สีเทาเข้ม W3 ศูนย์ W3-ข้อความแสงสีเทา W3-padding-32" id = "เกี่ยวกับ">
+    <h4> <b> เกี่ยวกับฉัน </ b> </ h4>
+    <img src = "avatar_hat.jpg" alt = "ฉัน" class = "W3 ภาพ W3-padding-32" width = "600" height = "650">
+    <div class = "W3 เนื้อหา W3-ปรับ" style = "แม็กซ์ความกว้าง: 600px">
+      <h4> ชื่อของฉัน </ h4>
+      <p> ข้อความบางอย่างเกี่ยวกับฉัน ฉันรักการถ่ายภาพบุคคล ผม Lorem Ipsum consectetur adipiscing Elit, sed ทำ eiusmod tempor incididunt UT Labore et dolore Magna aliqua Ut enim โฆษณาขีดต่ำที่สุด veniam, โฟน nostrud exercitation ullamco laboris ค้างคา UT aliquip อดีต EA commodo consequat Duis Irure Aute
+        บังคับใน reprehenderit ใน voluptate velit esse cillum dolore pariatur สหภาพยุโรป fugiat nulla Sint Excepteur occaecat cupidatat ไม่ใช่ proident, อยู่ในบาป Qui OFFICIA deserunt mollit Anim ID EST laborum consectetur adipiscing Elit, sed ไม่ eiusmod tempor
+        UT incididunt Labore et dolore Magna aliqua Ut enim โฆษณาขีดต่ำที่สุด veniam, โฟน nostrud exercitation ullamco laboris ค้างคา UT aliquip อดีต EA commodo consequat
+      </ p>
+      <p> mail: example@example.com </ p>
+      <p> โทร: 5353 35531 </ p>
+      <hr class = "W3-ทึบ">
+      <ระดับ H4 = "W3-padding-16"> ทักษะทางเทคนิค </ h4>
+      <p class = "W3 กว้าง"> การถ่ายภาพ </ p>
+      <div class = "W3 ขาว">
+        <div class = "W3-Container W3-padding-W3 เล็กศูนย์ W3 เทา" style = "width: 95%"> 95% </ div>
+      </ div>
+      <p class = "W3 กว้าง"> Web Design </ p>
+      <div class = "W3 ขาว">
+        <div class = "W3-Container W3-padding-W3 เล็กศูนย์ W3 เทา" style = "width: 85%"> 85% </ div>
+      </ div>
+      <ระดับ P = "W3 กว้าง"> Photoshop </ p>
+      <div class = "W3 ขาว">
+        <div class = "W3-Container W3-padding-W3 เล็กศูนย์ W3 เทา" style = "width: 80%"> 80% </ div>
+      </ div>
+      <p> <ปุ่ม class = "W3 ปุ่ม W3-padding-W3 ขนาดใหญ่ที่มีอัตรากำไรบน W3-margin ล่าง"> ผลงาน </ ปุ่ม> </ p>
+      <hr class = "W3-ทึบ">
+
+      <H4 class = "W3-padding-16"> เท่าไหร่ที่ฉันคิด </ h4>
+      <class = "W3 แถว-padding" สไตล์ div = "margin: 0 -16px">
+        <div class = "W3 ครึ่ง W3-margin ล่าง">
+          <ระดับ UL = "W3-UL W3 ขาว W3 ศูนย์ W3-W3 ทึบ-hover-ทึบปิด">
+            <li ระดับ = "W3 ดำ W3-W3 XLarge-padding-32"> พื้นฐาน </ li>
+            <li ระดับ = "W3-padding-16"> Web Design </ li>
+            <li ระดับ = "W3-padding-16"> การถ่ายภาพ </ li>
+            <li class = "W3-padding-16"> 5GB จัดเก็บ </ li>
+            <li class = "W3-padding-16"> สนับสนุนจดหมาย </ li>
+            <li ระดับ = "W3-padding-16">
+              <h2> $ 10 </ h2>
+              <ระดับช่วง = "W3-ทึบ"> ต่อเดือน </ span>
+            </ li>
+            <li ระดับ = "W3-แสงสีเทา W3-padding-24">
+              <ระดับปุ่ม = "W3-W3 ปุ่มสีขาว W3-padding-ใหญ่"> Sign Up </ ปุ่ม>
+            </ li>
+          </ ul>
+        </ div>
+        
+        <div class = "W3 ครึ่ง">
+          <ระดับ UL = "W3-UL W3 ขาว W3 ศูนย์ W3-W3 ทึบ-hover-ทึบปิด">
+            <li ระดับ = "W3 ดำ W3-W3 XLarge-padding-32"> Pro </ li>
+            <li ระดับ = "W3-padding-16"> Web Design </ li>
+            <li ระดับ = "W3-padding-16"> การถ่ายภาพ </ li>
+            <li class = "W3-padding-16"> 50GB จัดเก็บ </ li>
+            <li ระดับ = "W3-padding-16"> สนับสนุน Endless </ li>
+            <li ระดับ = "W3-padding-16">
+              <h2> $ 25 </ h2>
+              <ระดับช่วง = "W3-ทึบ"> ต่อเดือน </ span>
+            </ li>
+            <li ระดับ = "W3-แสงสีเทา W3-padding-24">
+              <ระดับปุ่ม = "W3-W3 ปุ่มสีขาว W3-padding-ใหญ่"> Sign Up </ ปุ่ม>
+            </ li>
+          </ ul>
+        </ div>
+      </ div>
+    </ div>
+  </ div>
+
+  <! - ส่วนติดต่อ ->
+  <div class = "W3-Container-W3 แสงสีเทา W3-padding-32-W3 padding-ใหญ่" id = "ติดต่อ">
+    <div class = "W3 เนื้อหา" style = "แม็กซ์ความกว้าง: 600px">
+      <ระดับ H4 = "W3 ศูนย์"> <b> ติดต่อฉัน </ b> </ h4>
+      <p> คุณต้องการให้ฉันไปถ่ายภาพกับคุณหรือไม่ กรอกแบบฟอร์มและกรอกฉันในรายละเอียดที่ :) ฉันรักการประชุมคนใหม่! </ p>
+      <การดำเนินการรูปแบบ = "/ action_page.php" target = "_ blank">
+        <div class = "W3 กลุ่ม">
+          <label> ชื่อ </ label>
+          <ระดับการป้อนข้อมูล = "W3 อินพุต W3 พรมแดน" type = "text" name = "ชื่อ" จำเป็น>
+        </ div>
+        <div class = "W3 กลุ่ม">
+          <label> อีเมล </ label>
+          <input class = "W3 อินพุต W3 พรมแดน" type = "text" name = "อีเมล" ต้อง>
+        </ div>
+        <div class = "W3 กลุ่ม">
+          <label> ข้อความ </ label>
+          <input class = "W3 อินพุต W3 พรมแดน" type = "text" name = "ข้อความ" ที่จำเป็น>
+        </ div>
+        <ชนิดปุ่ม = "ส่ง" class = "W3 ปุ่ม W3 บล็อก W3 ดำ W3-margin ล่าง"> ส่งข้อความ </ ปุ่ม>
+      </ form>
+    </ div>
+  </ div>
+
+  <! - ท้าย ->
+  <ท้าย class = "W3-Container W3-padding-32 W3 เทา">  
+    <div class = "W3 แถว-padding">
+      <div class = "W3 สาม">
+        <h3> ข้อมูล </ h3>
+        <p> ติดต่อเรา tincidunt SED เทลลัส UT rutrum condimentum SED Vitae Justo, Porta Lectus ประวัติ, ultricies congue Gravida เส้นผ่าศูนย์กลางไม่ใช่ fringilla. </ p>      
+      </ div>
+    
+      <div class = "W3 สาม">
+        <h3> โพสต์ </ h3>
+        <ระดับ UL = "W3-UL">
+          <li class = "W3-padding-16 W3-hover ดำ">
+            <img src = "workshop.jpg" class = "W3 ซ้าย W3 มีอัตรากำไรขวา" style = "width: 50px">
+            <span class = "W3 ขนาดใหญ่"> Lorem </ span> ฟรี
+            <span> Sed Mattis ในขณะนี้ </ span>
+          </ li>
+          <li class = "W3-padding-16 W3-hover ดำ">
+            <img src = "gondol.jpg" class = "W3 ซ้าย W3 มีอัตรากำไรขวา" style = "width: 50px">
+            <span class = "W3 ขนาดใหญ่"> Ipsum </ span> ฟรี
+            <span> Praes tinci SED </ span>
+          </ li> 
+        </ ul>
+      </ div>
+
+      <div class = "W3 สาม">
+        <h3> POPULAR TAGS </ h3>
+        <p>
+          <span class = "W3 แท็ก W3 ดำ W3-margin ล่าง"> ท่องเที่ยว </ span> <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง"> นิวยอร์ก </ span> <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง"> ลอนดอน </ span>
+          <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง"> ระดับ IKEA </ span> <span = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง" > นอร์เวย์ </ span> <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง"> DIY </ span>
+          <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง"> ไอเดีย </ span> <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง" > เด็ก </ span> <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง"> ครอบครัว </ span>
+          <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง"> ชั้นข่าว </ span> <span = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง" > เครื่องแต่งกายระดับ </ span> <span = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง"> ช้อปปิ้ง </ span>
+          <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง"> กีฬา </ span> <span class = "W3 แท็ก W3-สีเทาเข้ม W3 เล็ก W3-margin ล่าง" > เกม </ span>
+        </ p>
+      </ div>
+    </ div>
+  </ ท้าย>
+  
+  <div class = "W3 ดำ W3 ศูนย์ W3-padding-24"> ขับเคลื่อนโดย <a href = "https://www.w3schools.com/w3css/default.asp" title = "W3.CSS" target = "_ blank" class = "W3-hover-ทึบ"> w3.css </a> </ div>
+
+<! - เนื้อหาของหน้า End ->
+</ div>
+
+<script>
+// สคริปต์เพื่อเปิดและ sidenav ใกล้
+ฟังก์ชั่น w3_open () {
+    . document.getElementById ( "mySidenav") style.display = "บล็อก";
+    document.getElementById ( "myOverlay") style.display = "บล็อก".
+}
+ 
+ฟังก์ชั่น w3_close () {
+    . document.getElementById ( "mySidenav") style.display = "ไม่มี";
+    . document.getElementById ( "myOverlay") style.display = "ไม่มี";
+}
+
+// แกลเลอรี่ภาพ Modal
+ฟังก์ชั่น onClick (องค์ประกอบ) {
+  document.getElementById ( "img01") src = element.src.
+  . document.getElementById ( "modal01") style.display = "บล็อก";
+  var captionText = document.getElementById ( "คำบรรยายภาพ");
+  captionText.innerHTML = element.alt;
+}
+
+</ script>
+
+
+</ body>
+</ html>
